@@ -1,0 +1,24 @@
+body {
+    background-color: #C7B29E;
+}
+
+    .nav {
+        background-color: #7D524A;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+        .nav-button {
+            font-size: 1.7rem;
+        }
+
+        a {
+            font-family: 'Jim Nightshade', cursive;
+        }
+
+        .logoImg {
+            width: 200px;
+            height: 150px;
+            margin-top: -15px;
+        }
