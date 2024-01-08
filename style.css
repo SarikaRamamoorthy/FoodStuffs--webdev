@@ -5,20 +5,111 @@ body {
     .nav {
         background-color: #7D524A;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-evenly;  
         align-items: center;
     }
     
         .nav-button {
-            font-size: 1.7rem;
+            font-size: 1.8rem;
         }
 
         a {
             font-family: 'Jim Nightshade', cursive;
         }
 
+        a:hover {
+            text-decoration: overline;
+        }
+
+        .menu {
+            margin-left: 2rem;
+        }
+        
         .logoImg {
             width: 200px;
             height: 150px;
             margin-top: -15px;
+        }
+        
+        .contact {
+            margin-right: 2rem;
+        }
+
+.hero {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: aqua; */
+    width: fit-content;
+}
+    
+    .heading {
+        margin-bottom: 20px;
+
+        font-family: 'Playfair Display', serif;
+        font-size: 75px;
+
+        /* width: 572px;
+        height: 152px; */
+    }
+
+    .para {
+        font-family: 'DM Sans', sans-serif;
+
+        font-size: 1rem;
+        font-weight: 400;
+
+        line-height: 32px;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-around;
+        font-size: 1rem;
+        margin-top: 20px;
+        /* background-color: aqua; */
+    }
+    
+    .button-type-1,.button-type-2 {
+        padding: 15px;
+        border-radius: 50px;
+        /* filter: invert(1); */
+    }
+
+        .button-type-1>a,.button-type-2>a {
+            font-family: 'Libre Bodoni', serif;
+        }
+
+        .button-type-1>a:hover,.button-type-2>a:hover {
+            text-decoration: none;
+        }
+
+    .button-type-1 {
+        background-color: #7D524A;
+    }
+
+    .button-type-2 {
+        background-color: #D9D9D9;
+    }
+
+        .button-type-1>a {
+            color: #D9D9D9;
+        }
+        
+        .button-type-2>a {
+            color: #7D524A;
+        }
+    
+
+    .rightbox {
+        height: fit-content;
+        margin-top: 30px;
+        margin-left: 30px;
+        /* background-color: aqua; */
+    }
+
+        .burger-img {
+            margin-left: 50px;
+            width: 470px;
         }
