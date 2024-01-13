@@ -1,5 +1,50 @@
-/* .address {
+.nav {
+    position: static;
+}
+
+.address-bar {
     margin-top: 150px;
-    background-color: #7d524af7;
-    height: 700px;
-} */
+    background-color: #7d524a81;
+    height: 890px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* position: relative; */
+    /* padding: 50px; */
+}
+
+.form {
+    margin-right: 4rem;
+}
+
+    h2 {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 2.5rem;
+        
+        width: fit-content;
+        margin-bottom: 30px;
+    }
+
+    .bold {
+        font-size: large;
+        font-weight: 900;
+    }
+
+    .light-bold {
+        font-family: 'Libre Baskerville', serif;
+    }
+
+    .italic {
+        font-style: italic;
+    }
+
+    
+    .input {
+        margin-top: 20px;
+        width: 530px;
+        height: 20px;
+        padding: 10px;
+        font-size: 15px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }

@@ -12,6 +12,8 @@ html {
 
 body {
     background-color: #c7b29ed3;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
     .nav {
@@ -22,9 +24,11 @@ body {
         top: 0;
         position: sticky;
     }
-    
-        .nav-button {
+        
+        .nav-buttons {
             font-size: 1.8rem;
+            width: 5rem;
+            text-align: center;
         }
 
         a {
@@ -34,10 +38,6 @@ body {
         a:hover {
             text-decoration: overline;
         }
-
-        .menu {
-            margin-left: 2rem;
-        }
         
         .logoImg {
             width: 11rem;
@@ -45,17 +45,32 @@ body {
             margin-top: -15px;
         }
 
-        .contact {
-            margin-right: 2rem;
+        .button-toggle {
+            margin-right: 2%;
+            display: none;
         }
+
+        /* .blur {
+            top: 0;
+            position: absolute;
+            left: 20%;
+            width: 70vh;
+            height: 100%;
+            background-color: #fff6dc;
+            z-index: 1;
+        } */
 
 .hero {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    /* background-color: aqua; */
     width: fit-content;
+}
+
+.diff-hero {
+    flex-direction: row-reverse;
 }
     
     .heading {
@@ -63,9 +78,6 @@ body {
 
         font-family: 'Playfair Display', serif;
         font-size: 75px;
-
-        /* width: 572px;
-        height: 152px; */
     }
 
     .para {
@@ -82,13 +94,11 @@ body {
         justify-content: space-around;
         font-size: 1rem;
         margin-top: 20px;
-        /* background-color: aqua; */
     }
     
     .button-type-1,.button-type-2 {
         padding: 15px;
         border-radius: 50px;
-        /* filter: invert(1); */
     }
 
         .button-type-1>a,.button-type-2>a {
@@ -120,7 +130,12 @@ body {
         height: fit-content;
         margin-top: 30px;
         margin-left: 30px;
-        /* background-color: aqua; */
+    }
+
+    pre {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
 
         .img {
@@ -139,10 +154,150 @@ body {
         
         .point {
             display: flex;
-            margin-left: 80px;
+            margin-left: 40px;
             margin-bottom: 10px;
         }
         
         .text {
             margin-left: 10px;
         }
+
+        
+@media (max-width:1070px) {
+    .img {
+        margin-left: 20px;
+        width: 300px;
+        transition: width 2s;
+    }
+
+    .img:hover {
+        width: 330px;
+    }
+
+    .heading {
+        font-size: 50px;
+    }
+    .para {
+        font-size: 0.7rem;
+        font-weight: 300;
+
+        line-height: 32px;
+    }
+}
+
+@media (max-width:765px) {
+
+    .hero {
+        display: block;
+    }
+    .hero img{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+    .rightbox {
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    .leftbox {
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+    }
+    
+    .heading {
+        font-size: 40px;
+    }
+    .empty {
+        display: none;
+    }
+    .buttons {
+        display: flex;
+        justify-content: space-around;
+        font-size: 0.7rem;
+        margin-top: 20px;
+    }
+    
+    .button-type-1,.button-type-2 {
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 50px;
+    }
+
+    .point {
+        width: fit-content; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+    }
+
+    .logoImg {
+        margin-top: -10px;
+        width: 9rem;
+        height: 7rem;
+    }
+    .nav-buttons {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width:500px){
+    .logoImg {
+        margin-left: 0px;
+        width: 8rem;
+        height: 6rem;
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    .button-toggle {
+        display: block;
+    }
+    /* .nav-buttons {
+        display: none;
+    } */
+    a:hover {
+        text-decoration: none;
+    }
+    .nav-buttons {
+        position: absolute;
+        /* margin-top: 150px; */
+        width: 8rem;
+        z-index: 2;
+    }
+
+    .nav-button {
+        color: #cdc792;
+        font-weight: 900;
+        font-size: 30px;
+    }
+
+    .nav-button:is(:hover, :active) {
+        color: black;
+    }
+    
+    .button1 {
+        color: #C4C1A4;
+        margin-top: 60%;
+        margin-left: 10%;
+    }
+    .button2 {
+        color: #C4C1A4;
+        margin-top: 80%;
+        margin-left: 10%;
+    }
+    .button3 {
+        color: #C4C1A4;
+        margin-top: 100%;
+        margin-left: 10%;
+    }
+    .button4 {
+        color: #C4C1A4;
+        margin-top: 120%;
+        margin-left: 10%;
+    }
+}
