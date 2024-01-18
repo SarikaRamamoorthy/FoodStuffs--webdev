@@ -1,0 +1,48 @@
+.grid {
+    display: grid;
+    gap: 5rem 5rem;
+    grid-template-columns: auto auto auto;
+
+    width: 1024px;
+    /* background-color:red; */
+    margin: 0 auto 0 auto;
+    padding: 5rem 0 5rem 0;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.box {
+    background-color: #E5E1DA;
+    padding: 1.5rem;
+    width: fit-content;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.box img{
+    width: 13rem;
+    height: 13rem;
+    margin-bottom: 1rem;
+    /* border: 1rem solid white; */
+}
+.description {
+    width: 14rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.cart-button {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cart-button-outline {
+    border: 0.1rem solid black;
+    padding: 0.1rem 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 0.2rem;
+}
+
+.items-count {
+    padding-top: 0.3rem;
+}

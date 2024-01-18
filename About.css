@@ -1,0 +1,32 @@
+h2 {
+    width: 25rem;
+    text-align: left;
+}
+
+.pre {
+    width: 28rem;
+    text-align: left;
+}
+
+.bold {
+    font-size: medium;
+    font-weight: bolder;
+}
+.image {
+    height: 400px;
+    width: 400px;
+}
+
+.image,.chef {
+    margin-right: 3rem;
+    border-radius: 10px;
+    transition: ease-in 2s;
+}
+
+.image:hover, .chef:hover {
+    transform: scale(1.1);
+}
+
+.chef {
+    height: 440px;
+}

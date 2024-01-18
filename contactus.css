@@ -3,35 +3,41 @@
 }
 
 .address-bar {
-    margin-top: 150px;
     background-color: #7d524a81;
-    height: 890px;
     color: white;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    /* position: relative; */
-    /* padding: 50px; */
+    justify-content: space-evenly;
 }
 
 .form {
-    margin-right: 4rem;
+    padding: 3rem;
+    /* margin-right: 4rem; */
 }
+
+    .para {
+        margin-left: 0;
+    }
+
+    pre {
+        margin-left: 0;
+    }
 
     h2 {
         font-family: 'Libre Baskerville', serif;
-        font-size: 2.5rem;
+        font-size: 2rem;
         
         width: fit-content;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
 
     .bold {
-        font-size: large;
+        font-size: medium;
         font-weight: 900;
     }
-
+    
     .light-bold {
+        font-size: medium;
         font-family: 'Libre Baskerville', serif;
     }
 
@@ -41,10 +47,108 @@
 
     
     .input {
-        margin-top: 20px;
-        width: 530px;
+        margin-top: 15px;
+        width: 25rem;
         height: 20px;
         padding: 10px;
         font-size: 15px;
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    /* .input[type=submit] {
+        display: block;
+        width: 10px;
+    } */
+
+    .input-area {
+        margin-top: 15px;
+        width: 25rem;
+        padding: 10px;
+        font-size: 15px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    iframe {
+        width: 30rem;
+        height: 40rem;
+    }
+
+    @media (max-width: 1024px) {
+        iframe {
+            width: 20rem;
+            height: 30rem;
+        }
+    }
+
+    @media (max-width: 850px) {
+        .heading {
+            font-size: 50px;
+            white-space: normal; 
+            margin: 1rem auto;
+        }
+        .para {
+            font-size: 0.7rem;
+            font-weight: 300;
+    
+            line-height: 32px;
+        }
+        iframe {
+            width: 30rem;
+            height: 20rem;
+        }
+        .form {
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .address-bar {
+            display: block;
+            padding-top: 40px;
+        }
+        .map {
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .buttons {
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+        .rightbox {
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media (max-width: 550px) {
+        iframe {
+            width: 27rem;
+            height: 15rem;
+        }
+        .input-area {
+            width: 20rem;
+            font-size: 12px;
+        }
+        .input {
+            width: 20rem;
+            height: 20px;
+            font-size: 12px;
+        }
+        .bold {
+            font-size: small;
+            font-weight: 900;
+        }
+        
+        .light-bold {
+            font-size: small;
+            font-family: 'Libre Baskerville', serif;
+        }
+    }
+
+    @media (max-width:470px) {
+        iframe {
+            width: 22rem;
+            height: 15rem;
+        }
     }
